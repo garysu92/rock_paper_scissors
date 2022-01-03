@@ -18,5 +18,7 @@ function computerMove(e) {
     result = "loss";
   else result = "win";
 }
-
+let userScore = 0,
+  compScore = 0;
+document.getElementsByClassName("header").innerHTML = "score";
 window.addEventListener("click", computerMove);

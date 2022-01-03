@@ -1,4 +1,4 @@
-function computerMove() {
+function computerMove(e) {
   let select = Math.floor(Math.random() * 3) + 1;
   let comp;
   if (select == 1) {
@@ -8,9 +8,6 @@ function computerMove() {
   } else {
     comp = "scissor";
   }
-  return comp;
 }
 
-for (let i = 0; i < 5; i++) {
-  alert(rps());
-}
+window.addEventListener("click", computerMove);

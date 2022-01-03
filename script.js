@@ -20,5 +20,6 @@ function computerMove(e) {
 }
 let userScore = 0,
   compScore = 0;
-document.getElementsByClassName("header").innerHTML = "score";
+console.log(document.getElementById("header"));
+
 window.addEventListener("click", computerMove);
